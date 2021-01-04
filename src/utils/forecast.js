@@ -13,11 +13,12 @@ const forecast = (latitude, longitude, callback) => {
       } else {
         const temp = body.current.temperature,
           desc = body.current.weather_descriptions[0],
-          humidity = body.current.humidity;
-        console.log(temp);
+          humidity = body.current.humidity,
+          weather_icon = body.current.weather_icons[0];
         callback(
           undefined,
-          `It is currently ${temp} degrees outside. The weather is ${desc} and humidity is ${humidity}.`
+          `It is currently ${temp} degrees outside. The weather is ${desc} and humidity is ${humidity}.`,
+          weather_icon
         );
       }
     }

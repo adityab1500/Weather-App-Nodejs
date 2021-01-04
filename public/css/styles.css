@@ -37,8 +37,11 @@ header a {
   text-decoration: none;
 }
 
-.portrait {
-  width: 250px;
+#weather_icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
 
 input {
